@@ -1,5 +1,9 @@
 # Scala GraalVM Example Using Static Native Image
 
+### Overview
+
+
+
 ### Building the Project
 You can accept he default responses to the configuration questions.
 
@@ -186,3 +190,8 @@ $ cat results/native_results.txt results/jar_results.txt | wrk2img --log -n "nat
 ```
 
 ![](results/graph.png)
+
+As you will notice, startup time for the native image version is considerably faster than the jar version.
+
+### Summary
+
