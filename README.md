@@ -4,7 +4,11 @@
 
 
 
-### Building the Project
+### Credits
+
+The following example is based on the "Quickstart" tutorial at [https://http4s.org/v1.0/](https://http4s.org/v1.0/). 
+
+### Configuring and Building the Example Project
 You can accept he default responses to the configuration questions.
 
 ```
@@ -102,11 +106,18 @@ Date: Mon, 10 May 2021 18:37:37 GMT
 I'll be using [`wrk2`](https://github.com/giltene/wrk2) for the actual benchmarks and an extension called [`wrk2img`](https://github.com/PPACI/wrk2img) to create some nice graphs of our benchmark results.
 
 Assuming you have both tools installed (and the server running), let's get started!
+
+Create the `results` directory to store the output from our benchmark tests:
+
+```
+$ mkdir results
+```
+Run the benchmark test:
 ```
 $ wrk --latency --rate 100 --connections 5 --threads 2 --duration 60s http://localhost:8080/joke > results/jar_resuts.txt
 ```
 
-### Building a Static Native Image
+### Building a Static Native Image Executable
 
 See this [link](https://docs.oracle.com/en/graalvm/enterprise/21/docs/reference-manual/native-image/StaticImages/) for information on downloading and building `musl` and `zlibc`.
 
