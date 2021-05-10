@@ -22,7 +22,7 @@ graal_native_image [TRUE/false]:
 is_linux_build [true/FALSE]:
 scala_assembly_target [scala-2.13]:
 
-Template applied in /home/sseighma/code/graalvm/scala-demos/quickstart/test/./quickstart
+Template applied in /home/sseighma/code/graalvm/scala-demos/quickstart
 ```
 Next, change to the `quickstart` directory:
 ```
@@ -185,4 +185,4 @@ Combine the two benchmarks and graph the results:
 $ cat results/native_results.txt results/jar_results.txt | wrk2img --log -n "native", "jar" results/graph-final.png  >> /dev/null
 ```
 
-![](//wsl$/Fedora/home/sseighma/code/graalvm/scala-demos/Scala-GraalVM-Example/results/graph.png)
+![](results/graph.png)
