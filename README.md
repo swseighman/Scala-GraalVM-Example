@@ -208,3 +208,5 @@ As you will notice, startup time for the native image version is considerably fa
 
 ### Summary
 
+In this exercise, we created a Scala application with JSON endpoints and then using the `native-image` tool, compiled a native image executable of the simple application.  Running a basic benchmark, we demonstrated the startup speed of native image executables and displayed a graph illustrating the application latency. The results mirror what we've experienced with Scala performance using GraalVM, so you should consider exploring how GraalVM can improve performance of your Scala applications.
+
