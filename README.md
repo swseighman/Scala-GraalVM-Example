@@ -2,7 +2,9 @@
 
 ### Overview
 
+As you're aware, Scala powers business critical applications that demand the highest possible performance and the best way to achieve this performance is by using GraalVM Enterprise. In fact, GraalVM performs really well on the Scala benchmarks, for example you can reference [Renaissance benchmarks suite](https://renaissance.dev/).
 
+In the following example, we'll build the [`http4s`](https://http4s.org/) server and create a native image executable to demostrate startup and throughput.
 
 ### Credits
 
